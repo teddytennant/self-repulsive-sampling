@@ -1,0 +1,14 @@
+[project]
+name = "self-repulsion"
+version = "0.1.0"
+description = "Self-repulsive sampling for masked diffusion language models"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["jax", "numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
